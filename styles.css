@@ -105,8 +105,19 @@ ul {
 }
 
 .dropdown-arrow {
-    font-size: 10px;
+    width: 10px;
+    height: 10px;
     margin-top: 2px;
+    display: inline-block;
+    transform: rotate(0deg);
+    transition: transform 0.8s ease;
+    transform-origin: center;
+    filter: invert(1) brightness(2);
+}
+
+.nav-item:hover .dropdown-arrow {
+    transform: rotate(180deg);
+
 }
 
 .header-buttons {
